@@ -58,6 +58,7 @@
     <li>Hesap açmak zorunlu değildir.</li>
     <li>Uygulama verisi Android sistem / Google otomatik yedeklemesine dahil edilmez.</li>
     <li>İnternet; Kur’an içeriği, güncelleme duyurusu ve mevsimsel içerik gibi özellikler için kullanılır.</li>
+    <li>Uygulama çökerse hata ayıklama için çökme kaydı gönderilir (Google Firebase Crashlytics).</li>
   </ul>
 
   <h2>2. Cihazda saklanan veriler</h2>
@@ -85,7 +86,17 @@
     içerik sunumu içindir.
   </p>
 
-  <h2>4. İzinler</h2>
+  <h2>4. Çökme raporları</h2>
+  <p>
+    Uygulama çöktüğünde, hatayı bulup düzeltebilmemiz için Google Firebase
+    Crashlytics aracılığıyla bir çökme kaydı gönderilir. Bu kayıt cihaz modeli,
+    işletim sistemi sürümü ve hatanın teknik detayı gibi bilgiler içerir;
+    zikirleriniz, sayaçlarınız veya istatistikleriniz bu kayıtta yer almaz.
+    Çökme kayıtları yalnızca hataları düzeltmek için kullanılır; reklam veya
+    profilleme amacıyla kullanılmaz.
+  </p>
+
+  <h2>5. İzinler</h2>
   <ul>
     <li><strong>Bildirimler:</strong> isteğe bağlı günlük hatırlatıcı</li>
     <li><strong>Titreşim, ses, ekranı uyanık tutma:</strong> uygulama içi deneyim</li>
@@ -93,13 +104,13 @@
     <li><strong>İnternet:</strong> yukarıdaki içerik ve duyurular için</li>
   </ul>
 
-  <h2>5. Çocuklar</h2>
+  <h2>6. Çocuklar</h2>
   <p>
     Uygulama çocuklara özel tasarlanmış bir hizmet değildir.
     Bilerek 13 yaş altından kişisel veri toplamayız.
   </p>
 
-  <h2>6. Güncellemeler</h2>
+  <h2>7. Güncellemeler</h2>
   <p class="note">
     Bu gizlilik politikası zaman zaman güncellenebilir. Güncel sürüm her zaman
     bu sayfada yayınlanır. Önemli değişikliklerde Play Store açıklaması veya
@@ -107,7 +118,7 @@
     kontrol etmenizi öneririz.
   </p>
 
-  <h2>7. İletişim</h2>
+  <h2>8. İletişim</h2>
   <p>
     Sorularınız için:
     <a href="mailto:zikirmatik.help@gmail.com">zikirmatik.help@gmail.com</a>
