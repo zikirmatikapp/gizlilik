@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Zikirmatik</title>
+  <title>Privacy Policy — Tasbeeh Counter</title>
   <style>
     :root { color-scheme: light dark; }
     body {
@@ -42,12 +42,12 @@
 
   <h1>Privacy Policy</h1>
   <p class="meta">
-    Zikirmatik · Developer: Anka Studio · Last updated: 23 September 2026<br>
+    Tasbeeh Counter · Developer: Anka Studio · Last updated: 11 October 2026<br>
     Contact: <a href="mailto:zikirmatik.help@gmail.com">zikirmatik.help@gmail.com</a>
   </p>
 
   <p>
-    This policy explains how the <strong>Zikirmatik</strong> app on Google Play
+    This policy explains how the <strong>Tasbeeh Counter</strong> app on Google Play
     handles data. By using the app, you acknowledge that you have read this
     policy.
   </p>
@@ -60,6 +60,7 @@
     <li>App data is not included in Android system / Google automatic backup.</li>
     <li>Internet may be used for Quran content, update notices, and seasonal content.</li>
     <li>If the app crashes, a crash report is sent for debugging (Google Firebase Crashlytics).</li>
+    <li>On Android, the app connects to RevenueCat with an anonymous ID to check subscription status (see section 6).</li>
   </ul>
 
   <h2>2. Data stored on your device</h2>
@@ -97,7 +98,7 @@
     <li>The group name and its 6-character join code</li>
     <li>The name you use in that group — a nickname is fine, your real name is never required</li>
     <li>Which juz you took or completed, and when</li>
-    <li>An <strong>anonymous identity</strong> specific to your device: it is not tied to your name, email or phone number</li>
+    <li>An <strong>anonymous identity</strong> specific to your device, created with Google Firebase Authentication: it is not tied to your name, email or phone number. While creating and using this identity, Firebase Authentication processes your IP address and device/browser information (user agent).</li>
     <li>If you report a group, the report record and the description you wrote</li>
   </ul>
   <p>
@@ -107,10 +108,21 @@
     profiling and is not sold to third parties.
   </p>
   <p>
+    <strong>Where data is processed:</strong> group records are stored in the
+    European region of Firebase Firestore. Firebase Authentication runs only in
+    data centers in the United States. So when you use shared khatm, your data is
+    processed outside your country.
+  </p>
+  <p>
     <strong>Deletion:</strong> when you leave a group, your membership record is
     deleted. When the person who created a group deletes it, all of the group's
-    records are deleted. Groups nobody touches are deleted from the server after 12
-    months. The anonymous identity belongs to your device, so if you delete the app
+    records are deleted. Even after you leave a group, your name stays on the juz
+    you finished until the group is deleted. Groups are not deleted automatically
+    after a period of time; they stay on the server until the person who created
+    them deletes them. The anonymous identity record stays in Firebase
+    Authentication unless you ask us to delete it; Firebase keeps the IP addresses
+    linked to it for a few weeks. The anonymous identity belongs to your device, so
+    if you delete the app
     or change devices you lose access to it. For any other deletion request, write to
     the address below. Step-by-step: <a href="hesap-silme.html#en">Account and Data Deletion</a>.
   </p>
@@ -128,22 +140,34 @@
     technical details of the error; your dhikr entries, counters, and
     statistics are not included. Crash reports are used only to fix bugs;
     they are not used for advertising or profiling.
+    Crashlytics runs on Google’s global infrastructure; reports are kept for 90
+    days, after which Google starts the process of deleting them.
   </p>
 
-  <h2>6. Permissions</h2>
+  <h2>6. Purchases and subscriptions</h2>
+  <p>
+    Payments are handled entirely by Google Play; we never have access to your card
+    or payment details. When the Android app opens, it connects to the subscription
+    management service <strong>RevenueCat</strong> with an anonymous user ID specific
+    to your device to check subscription status. If you make a purchase, the
+    product ID and transaction status are also shared with RevenueCat. RevenueCat
+    processes this data in the United States.
+  </p>
+
+  <h2>7. Permissions</h2>
   <ul>
     <li><strong>Notifications:</strong> optional daily reminder</li>
     <li><strong>Vibration, sound, keep screen awake:</strong> in-app experience</li>
     <li><strong>Internet:</strong> for the content and notices above</li>
   </ul>
 
-  <h2>7. Children</h2>
+  <h2>8. Children</h2>
   <p>
     The app is not directed at children. We do not knowingly collect personal
     data from anyone under 13.
   </p>
 
-  <h2>8. Updates</h2>
+  <h2>9. Updates</h2>
   <p class="note">
     This privacy policy may be updated from time to time. The current version
     is always published on this page. For important changes we may also use
@@ -151,7 +175,46 @@
     periodically.
   </p>
 
-  <h2>9. Contact</h2>
+  <h2>10. Data controller and your rights</h2>
+  <p>
+    <strong>Data controller:</strong> Ömer Öztürk (publishing as Anka Studio) ·
+    <a href="mailto:ozturkomer34052@gmail.com">ozturkomer34052@gmail.com</a>
+  </p>
+  <ul>
+    <li>
+      <strong>What we process and why:</strong> shared khatm group records (group
+      name, the name you use, juz status, anonymous identity, reports) to provide
+      the group feature; crash reports to fix bugs; subscription information to
+      verify purchases.
+    </li>
+    <li>
+      <strong>How it is collected:</strong> electronically while you use the app,
+      either automatically or from the information you enter.
+    </li>
+    <li>
+      <strong>Legal basis:</strong> processing is necessary to provide the features
+      you use, and our legitimate interest in keeping the app stable and safe.
+    </li>
+    <li>
+      <strong>Recipients and transfers:</strong> data is shared with our service
+      providers Google (Firebase) and RevenueCat for the purposes described on this
+      page. Their servers are located in Europe and the United States, so your data
+      is processed outside your country.
+    </li>
+    <li>
+      <strong>Your rights:</strong> you can ask whether we process your data,
+      request access to it, have it corrected or deleted, object to its
+      processing, and learn who it has been shared with. Depending on where you
+      live (for example under Turkey’s KVKK or the EU GDPR), you may also have the
+      right to complain to your data protection authority.
+    </li>
+    <li>
+      <strong>How to apply:</strong> email the address above; we respond free of
+      charge within 30 days.
+    </li>
+  </ul>
+
+  <h2>11. Contact</h2>
   <p>
     Questions:
     <a href="mailto:zikirmatik.help@gmail.com">zikirmatik.help@gmail.com</a>
